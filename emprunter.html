@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulaire de Dettes</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Formulaire de Dettes</h2>
+        <form action="/ajouter" method="POST">
+            <div class="form-group">
+                <label for="debiteur">Débiteur:</label>
+                <input type="text" id="debiteur" name="debiteur" required>
+            </div>
+            <div class="form-group">
+                <label for="crediteur">Créditeur:</label>
+                <input type="text" id="crediteur" name="crediteur" required>
+            </div>
+            <div class="form-group">
+                <label for="montant">Montant:</label>
+                <input type="number" id="montant" name="montant" step="0.01" required>
+            </div>
+            <button type="submit">Ajouter Dette</button>
+        </form>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
